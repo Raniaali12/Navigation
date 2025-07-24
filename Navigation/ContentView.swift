@@ -12,9 +12,18 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Text("this is the homepage.")
+                    .font(.largeTitle)
+                    .foregroundColor(Color.green)
                 NavigationLink(destination: SecondView ()) {
-                    Text("click me")
-                }
+                NavigationLink:
+                    (destination:
+                        Secondview()) {
+                        Text("click me!")
+                            .font(.title3)
+                            .fontWeight(.heavy)
+                            .padding([.top, .bottom, .trailing])
+                    }
+                        .navigtionTitle("home")                }
             }
             .padding()
         }
